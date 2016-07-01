@@ -3,6 +3,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "moduleResolution": "node"
   },
@@ -12,10 +13,21 @@
     "typings/index.d.ts"
   ],
   "files": [
+    "src/ducks/app/action-types.ts",
+    "src/ducks/app/actions.ts",
     "src/ducks/app/components/app/app.ts",
+    "src/ducks/app/components/counter/counter-container.ts",
+    "src/ducks/app/components/counter/counter.ts",
     "src/ducks/app/components/index.ts",
+    "src/ducks/app/constants.ts",
+    "src/ducks/app/effects.ts",
     "src/ducks/app/index.ts",
+    "src/ducks/app/reducer.ts",
+    "src/ducks/app/selectors.ts",
+    "src/effects.ts",
     "src/index.ts",
+    "src/reducer.ts",
+    "src/router.ts",
     "typings/index.d.ts"
   ],
   "atom": {
