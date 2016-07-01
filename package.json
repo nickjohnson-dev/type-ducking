@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --progress --colors",
+    "deploy": "surge ./public type-ducking.surge.sh",
+    "lint": "tslint src/**/*.ts || true",
     "postinstall": "typings install",
+    "predeploy": "npm run build -s",
     "start": "webpack-dev-server --hot --inline"
   },
   "keywords": [],
