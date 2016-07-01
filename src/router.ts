@@ -14,6 +14,7 @@ export const routes: Route[] = [
   {
     path: '/',
     component: App,
+    redirectTo: '/counter',
     children: [
       {
         path: 'counter',
